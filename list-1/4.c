@@ -9,4 +9,5 @@ main() {
     printf("%d ",vetor[i]);
   }
   printf("\n");
+  true : 
 }
