@@ -10,11 +10,11 @@ int main() {
   }
   // saida
   for(i = 0; i < 50;i++) {
-    if(i < 49) {
+    // if(i < 49) {
     printf("%d, ",vetor[i]);
-    } else {
-    printf("%d ",vetor[i]);
-    }
+    // } else {
+    // printf("%d ",vetor[i]);
+    // }
   }
   return 0;
 }
