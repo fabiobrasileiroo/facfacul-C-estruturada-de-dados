@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-  int vetor[500];
+  int vetor[100];
   for(int i = 1; i <= 500;i++) {
     vetor[i]=i;
     if(vetor[i] % 5 == 0) {
