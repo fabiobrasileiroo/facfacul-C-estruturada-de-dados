@@ -5,7 +5,8 @@ typedef struct {
 }Aluno;
 
 int main() {
-	Aluno pessoa;
-	for()
+	int dia[121];
+	//menor temperatura ocorrida
+	//a maior temperatura
 	return 0;
 }
