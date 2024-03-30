@@ -1,19 +1,36 @@
-#include <stdio.h>
 // Faça um algoritmo que leia um vetor de 500 posições de números 
 // inteiros e divida todos os seus elementos pelo maior valor do vetor. 
 // Mostre o vetor após os cálculos.
-#define TAMANHO 50
+#include <stdio.h>
+
+#define TAMANHO 5
+
 int main() {
-  int array[TAMANHO]; 
-  int arrayCont=0;
-  int arrayMaior= -999;
-  for(size_t i = 0;i < TAMANHO;i++) {
-    scanf("%d",&array[i]);
-    arrayCont += array[i];
-    if(array > arrayMaior) {
-      arrayMaior = array[i];
+    int array[TAMANHO];
+    int arrayMaior;
+    float resultado[TAMANHO];
+
+    // Leitura dos valores e inicialização do arrayMaior com o primeiro elemento
+    scanf("%d", &array[0]);
+    arrayMaior = array[0];
+
+    // Leitura dos valores restantes e encontra o maior valor
+    for (int i = 1; i < TAMANHO; i++) {
+        scanf("%d", &array[i]);
+        if (array[i] > arrayMaior) {
+            arrayMaior = array[i];
+        }
     }
-  }
-  printf("%d",arrayCont/arrayMaior);
-  return 0;
+
+    // Divide cada elemento pelo maior valor e armazena no vetor 'resultado'
+    for (int i = 0; i < TAMANHO; i++) {
+        resultado[i] = (float)array[i] / arrayMaior;
+    }
+
+    // Mostra o vetor resultado após os cálculos
+    for (int i = 0; i < TAMANHO; i++) {
+        printf("%.2f ", resultado[i]);
+    }
+
+    return 0;
 }
