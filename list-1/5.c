@@ -1,4 +1,4 @@
-// #include <stdio.h>
+// #include <stdio.h>LA
 
 // int main() {
 //   int vetor[100];
