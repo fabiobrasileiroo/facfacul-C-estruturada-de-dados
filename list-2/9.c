@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// Faça um programa que lê um vetor de 3 elementos e uma matriz de 3 x 3 elementos. Em seguida o programa deve fazer a multiplicação do vetor pelas colunas da matriz.
 int main() {
     // Declaração do vetor e da matriz
     int vetor[3];
@@ -21,9 +21,9 @@ int main() {
     }
 
     // Multiplicação do vetor pelas colunas da matriz
-    for (int j = 0; j < 3; j++) {
-        for (int i = 0; i < 3; i++) {
-            resultado[j] += vetor[i] * matriz[i][j];
+    for (int l = 0; l < 3; l++) {
+        for (int c = 0; c < 3; c++) {
+            resultado[l] += vetor[c] * matriz[c][l];
         }
     }
 

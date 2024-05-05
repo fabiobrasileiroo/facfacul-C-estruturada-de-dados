@@ -1,5 +1,6 @@
 #include <stdio.h>
-// 10. Fazer um algoritmo que leia os valores de duas matrizes 3×3 e imprima a multiplicação das duas matrizes.
+// 10. Fazer um algoritmo que leia os valores de duas matrizes
+// 3×3 e imprima a multiplicação das duas matrizes.
 #define TAMANHO  3
 
 int main() {
@@ -16,7 +17,7 @@ int main() {
 
   // Leitura da matriz array2
   for (size_t l = 0; l < TAMANHO; l++) {
-    for (size_t c = 0; c < TAMANHO; c++) {
+    for (size_t c = 0; c < TAMANHO;  c++) {
       scanf("%d", &array2[l][c]);
     }
   }
@@ -29,6 +30,7 @@ int main() {
       }
     }
   }
+
 
   // Impressão da matriz resultante
   for (size_t l = 0; l < TAMANHO; l++) {
