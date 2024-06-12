@@ -11,12 +11,12 @@ struct Funcionarios {
     float salario;
 };
 
-#define TAMANHO_FUNCIONARIOS 3
 
 int main() {
+    printf("Digite a quantidade de funcionarios que eram entrar");
+    scanf('%d',tamanhoFuncionarios)
     struct Funcionarios funcionarios[TAMANHO_FUNCIONARIOS];
-    
-    for(int i = 0; i < TAMANHO_FUNCIONARIOS; i++) {
+    for(int i = 0; i < tamanhoFuncionarios; i++) {
         printf("Digite seu nome: ");
         scanf("%s", funcionarios[i].nome);
 
@@ -44,7 +44,7 @@ int main() {
 
 
     printf("\nDados dos funcionarios:\n");
-    for(int i = 0; i < TAMANHO_FUNCIONARIOS; i++) {
+    for(int i = 0; i < tamanhoFuncionarios; i++) {
         printf("Nome: %s\n", funcionarios[i].nome);
         printf("Idade: %d\n", funcionarios[i].idade);
         printf("Sexo: %c\n", funcionarios[i].sexo);

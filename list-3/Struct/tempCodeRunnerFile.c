@@ -1,2 +1,1 @@
-codigo de Disciplina:\n");
-    scanf("%d ",&alunos
+int soma(int a, int b);
